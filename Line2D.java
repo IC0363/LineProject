@@ -9,8 +9,9 @@ public class Line2D {
 
     }
     public Line2D (int x1, int y1, int x2, int y2){
-        new Point(x1,y1);
-        new Point(x2,y2);
+        point1 = new Point(x1,y2);
+        point2 = new Point(x2,y2);
+
 
     }
     public Point getp1(){
