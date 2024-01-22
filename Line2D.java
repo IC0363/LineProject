@@ -37,11 +37,9 @@ public class Line2D {
         double Yvalue = point2.getY()-point1.getY();
         double slope1 = Yvalue/Xvalue;
 
-        double Xvalue2 = p.getX() - point1.getY();
-        double Yvalue2 = p.getY() - point1.getY();
-        double slope2 = Yvalue2/Xvalue2;
+        double slope2 = (double) (p.getY() - point1.getY()) / (p.getX() - point1.getX());
 
-        return slope1-slope2<.01;
+        return Math.abs(slope1-slope2)<.01;
 
     }
 
